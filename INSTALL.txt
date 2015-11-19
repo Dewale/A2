@@ -20,6 +20,5 @@ Build Instructions:
     1. Install Visual Studio 2013.
     2. Download the entire repository from the GitHub page.
     3. Extract the files
-    4. Open the A2.sln in Visual Studio 2013 
-    5. Build the solution in either the Debug or Release configuration (32-bit ONLY).
+    4. Build the solution in either the Debug or Release configuration (32-bit ONLY).
 
