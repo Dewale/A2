@@ -27,7 +27,7 @@ CharacterSerializer &CharacterSerializer::GetInstance(){
 void CharacterSerializer::SaveCharacter(const Character &data){
 	GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-	proto::Avatar avatar;
+	proto::Character character;
 }
 
 
