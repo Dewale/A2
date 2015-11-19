@@ -3,8 +3,7 @@
 #include "Character.h"
 #include "SkillType.h"
 
-TEST(Test, SerializerTest)
-{
+TEST(Test, SerializerTest){
 	CharacterSerializer::GetInstance().SaveCharacter(Character("Barbarian", 1, SkillType::Babarian));
 	CharacterSerializer::GetInstance().LoadCharacter("Barbarian");
 	EXPECT_EQ(1, 1);
