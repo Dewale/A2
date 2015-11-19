@@ -1,1 +1,25 @@
+***********************************
+BUILD INSTRUCTIONS FOR Assignment 2
+***********************************
+    
+  Find below detailed instructions on how to successfully download, extract and build our project files.
+    
+
+
+
+Libraries / Software Used:
+    1. Google Protocol Buffers version 2.6.1
+    2. Google Test Framework version 1.7.0
+    3. Doxygen version 1.8
+    4. SFML 2.3.2
+
+
+
+
+Build Instructions:
+    1. Install Visual Studio 2013.
+    2. Download the entire repository from the GitHub page.
+    3. Extract the files
+    4. Open the A2.sln in Visual Studio 2013 
+    5. Build the solution in either the Debug or Release configuration (32-bit ONLY).
 
