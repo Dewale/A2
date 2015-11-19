@@ -1,5 +1,3 @@
-
-
 #include "SkillType.h"
 
 SkillType::SkillType(const ClassType &t) :
@@ -31,30 +29,23 @@ _skillType(t)
 SkillType::~SkillType()
 {}
 
-SkillType SkillType::GetSkillType() const
-{
+SkillType SkillType::GetSkillType() const{
 	return _skillType;
 }
-
-Skill SkillType::GetRockSkill() const
-{
-	return _rock;
-}
-
-Skill SkillType::GetPaperSkill() const
-{
-	return _paper;
-}
-
-Skill SkillType::GetScissorsSkill() const
-{
-	return _scissors;
+std::string SkillType::GetSkillTypeName() const{
+	return _name;
 }
 Weapon SkillType::GetWeapon() const {
 	return _weapon;
 }
-
-std::string SkillType::GetSkillTypeName() const
-{
-	return _name;
+Skill SkillType::GetRockSkill() const{
+	return _rock;
 }
+Skill SkillType::GetPaperSkill() const{
+	return _paper;
+}
+Skill SkillType::GetScissorsSkill() const{
+	return _scissors;
+}
+
+
