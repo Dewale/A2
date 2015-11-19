@@ -1,4 +1,4 @@
-/*
+/**
 * Implementation of CharacterSerializer class
 */
 
@@ -21,7 +21,7 @@ CharacterSerializer &CharacterSerializer::GetInstance(){
 	return instance;
 }
 
-/*
+/**
 * This method saves data using Google Protocol Buffers. 
 */
 void CharacterSerializer::SaveCharacter(const Character &data){
@@ -31,7 +31,7 @@ void CharacterSerializer::SaveCharacter(const Character &data){
 }
 
 
-/*
+/**
 * Loads data using Google Protocol Buffers.
 */
 bool CharacterSerializer::LoadCharacter(const std::string &CharacterName){
