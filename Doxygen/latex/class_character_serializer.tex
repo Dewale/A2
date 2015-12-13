@@ -1,0 +1,87 @@
+\hypertarget{class_character_serializer}{}\section{Character\+Serializer Class Reference}
+\label{class_character_serializer}\index{Character\+Serializer@{Character\+Serializer}}
+
+
+{\ttfamily \#include $<$Character\+Serializer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_character_serializer_a62575ca321a415f5843c57739e6e7d6a}{Save\+Character} (const \hyperlink{class_character}{Character} \&\hyperlink{class_character}{Character})
+\item 
+bool \hyperlink{class_character_serializer_a4fb415c79a103f01052a5266747dd00a}{Load\+Character} (const std\+::string \&Character\+Name)
+\item 
+\hyperlink{class_character}{Character} $\ast$ \hyperlink{class_character_serializer_a7c7ceb1ddb824143b06db85f693ac26c}{Get\+Player} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_character_serializer}{Character\+Serializer} \& \hyperlink{class_character_serializer_a5a5b282afaf1133b7199c54786adf777}{Get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Declaration of \hyperlink{class_character_serializer}{Character\+Serializer} class. Singleton class for saving and loading of \hyperlink{class_character}{Character} data. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_character_serializer_a5a5b282afaf1133b7199c54786adf777}{}\index{Character\+Serializer@{Character\+Serializer}!Get\+Instance@{Get\+Instance}}
+\index{Get\+Instance@{Get\+Instance}!Character\+Serializer@{Character\+Serializer}}
+\subsubsection[{Get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character\+Serializer} \& Character\+Serializer\+::\+Get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_character_serializer_a5a5b282afaf1133b7199c54786adf777}
+Returns the \hyperlink{class_character_serializer}{Character\+Serializer} instance.
+
+\begin{DoxyReturn}{Returns}
+the instance of the \hyperlink{class_character_serializer}{Character\+Serializer}. 
+\end{DoxyReturn}
+\hypertarget{class_character_serializer_a7c7ceb1ddb824143b06db85f693ac26c}{}\index{Character\+Serializer@{Character\+Serializer}!Get\+Player@{Get\+Player}}
+\index{Get\+Player@{Get\+Player}!Character\+Serializer@{Character\+Serializer}}
+\subsubsection[{Get\+Player() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Character} $\ast$ Character\+Serializer\+::\+Get\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_serializer_a7c7ceb1ddb824143b06db85f693ac26c}
+Returns the current player \hyperlink{class_character}{Character} loaded.
+
+\begin{DoxyReturn}{Returns}
+the loaded player \hyperlink{class_character}{Character} 
+\end{DoxyReturn}
+\hypertarget{class_character_serializer_a4fb415c79a103f01052a5266747dd00a}{}\index{Character\+Serializer@{Character\+Serializer}!Load\+Character@{Load\+Character}}
+\index{Load\+Character@{Load\+Character}!Character\+Serializer@{Character\+Serializer}}
+\subsubsection[{Load\+Character(const std\+::string \&\+Character\+Name)}]{\setlength{\rightskip}{0pt plus 5cm}bool Character\+Serializer\+::\+Load\+Character (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{Character\+Name}
+\end{DoxyParamCaption}
+)}\label{class_character_serializer_a4fb415c79a103f01052a5266747dd00a}
+A member functions for loading \hyperlink{class_character}{Character} data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Character\+Name} & -\/ a constant string that represents the \hyperlink{class_character}{Character}\textquotesingle{}s name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean value indicating success
+\end{DoxyReturn}
+Loads data using Google Protocol Buffers. \hypertarget{class_character_serializer_a62575ca321a415f5843c57739e6e7d6a}{}\index{Character\+Serializer@{Character\+Serializer}!Save\+Character@{Save\+Character}}
+\index{Save\+Character@{Save\+Character}!Character\+Serializer@{Character\+Serializer}}
+\subsubsection[{Save\+Character(const Character \&\+Character)}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+Serializer\+::\+Save\+Character (
+\begin{DoxyParamCaption}
+\item[{const {\bf Character} \&}]{data}
+\end{DoxyParamCaption}
+)}\label{class_character_serializer_a62575ca321a415f5843c57739e6e7d6a}
+A member functions for saving \hyperlink{class_character}{Character} data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_character}{Character}} & -\/ a constant reference to an \hyperlink{class_character}{Character} object\\
+\hline
+\end{DoxyParams}
+This method saves data using Google Protocol Buffers. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Adewale Adekoya/\+Documents/\+Git\+Hub/\+A2/Character\+Serializer.\+h\item 
+C\+:/\+Users/\+Adewale Adekoya/\+Documents/\+Git\+Hub/\+A2/Character\+Serializer.\+cpp\end{DoxyCompactItemize}

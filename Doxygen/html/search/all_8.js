@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatelevel',['UpdateLevel',['../class_character.html#a34ef80145d40f2d859b98398ec1be189',1,'Character']]]
+  ['takedamage',['TakeDamage',['../class_character.html#a08899a991714b1b880962064557e34bc',1,'Character']]]
 ];
