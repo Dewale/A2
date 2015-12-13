@@ -3,7 +3,7 @@ package proto;
 message Character {
   required string name = 1;
   required int32 level = 2;
-  required int32 experience = 3;
+  required int32 xp = 3;
   
   enum SkillType {
     DRAGON = 0;
