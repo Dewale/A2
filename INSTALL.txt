@@ -1,24 +1,90 @@
-***********************************
+===================================
 BUILD INSTRUCTIONS FOR Assignment 2
-***********************************
-    
+===================================
   Find below detailed instructions on how to successfully download, extract and build our project files.
     
-
-
-
 Libraries / Software Used:
     1. Google Protocol Buffers version 2.6.1
     2. Google Test Framework version 1.7.0
     3. Doxygen version 1.8
     4. SFML 2.3.2
 
-
-
-
 Build Instructions:
+
     1. Install Visual Studio 2013.
-    2. Download the entire repository from the GitHub page.
-    3. Extract the files
-    4. Build the solution in either the Debug or Release configuration (32-bit ONLY).
+    2. Download the zipped version of the repository.
+    3. Extract the files.
+    4. Build the solution in the Debug configuration
+
+
+To build, rebuild, or clean an entire solution
+ =============================================
+
+In Solution Explorer, choose or open the solution.
+
+On the menu bar, choose Build, and then choose one of the following commands:
+
+	Choose Build or Build Solution to compile only those project files and components that have changed since the most recent build.
+
+	Choose Rebuild Solution to "clean" the solution and then build all project files and components.
+
+	Choose Clean Solution to delete any intermediate and output files. With only the project and component files left,
+	new instances of the intermediate and output files can then be built. 
+
+To build or rebuild a single project
+====================================
+	In Solution Explorer, choose or open the project.
+
+	On the menu bar, choose Build, and then choose 	either Build ProjectName or Rebuild ProjectName.
+
+	Choose Build ProjectName to build only those project components that have changed since the most recent build.
+
+	Choose Rebuild ProjectName to "clean" the project and then build the project files and all project components.
+
+To build only the startup project and its dependencies
+======================================================
+	On the menu bar, choose Tools, Options.
+	
+	In the Options dialog box, expand the Projects and Solutions node, and then choose the Build and Run page.
+
+	The Build and Run, Projects and Solutions, Options dialog box opens.
+	
+	Select the Only build startup projects and dependencies on Run check box.
+	
+	When this check box is selected, only the current startup project and its dependencies are built when you perform either of the following steps:
+		
+		On the menu bar, choose Debug, Start (F5).
+		
+		On the menu bar, choose Build, Build Solution (CTRL+SHIFT+B).
+		
+		When this check box is cleared, all projects, their dependencies, and the solution files are built when you run either of the preceding commands.
+		By default,this check box is cleared.
+
+To build only the selected Visual C++ project
+=============================================
+Choose a Visual C++ project, and then, on the menu bar, choose Build, Project Only, and one of the following commands:
+		
+		Build Only ProjectName
+		
+		Rebuild Only ProjectName
+		
+		Clean Only ProjectName
+
+		Link Only ProjectName
+
+These commands apply only to the Visual C++ project that you chose, without building, rebuilding, cleaning, or linking any project dependencies or solution files.
+Depending on your version of Visual Studio, the Project Only submenu might contain more commands.
+
+To compile multiple C++ project items
+=====================================
+In Solution Explorer, choose multiple files that have can be compiled actions, open the shortcut menu for one of those files, and then chooseCompile.
+If the files have dependencies, the files will be compiled in dependency order. 
+The compile operation will fail if the files require a precompiled header that isn’t available when you compile. 
+The compile operation uses the current active solution configuration.
+
+To stop a build
+===============
+Perform either of the following steps:
+On the menu bar, choose Build, Cancel.
+Choose the Ctrl + Break keys.
 
