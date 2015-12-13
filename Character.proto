@@ -11,7 +11,5 @@ message Character {
     ARCHER = 2;
   }
   
-  message Skill{
-    required SKillType type = 4;
-  }
+  required SKillType type = 4;
 }
