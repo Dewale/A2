@@ -23,6 +23,7 @@
 #include <google/protobuf/message.h>
 #include <google/protobuf/repeated_field.h>
 #include <google/protobuf/extension_set.h>
+#include <google/protobuf/generated_enum_reflection.h>
 #include <google/protobuf/unknown_field_set.h>
 // @@protoc_insertion_point(includes)
 
@@ -35,6 +36,26 @@ void protobuf_ShutdownFile_Character_2eproto();
 
 class Character;
 
+enum Character_SkillType {
+  Character_SkillType_DRAGON = 0,
+  Character_SkillType_BABARIAN = 1,
+  Character_SkillType_ARCHER = 2
+};
+bool Character_SkillType_IsValid(int value);
+const Character_SkillType Character_SkillType_SkillType_MIN = Character_SkillType_DRAGON;
+const Character_SkillType Character_SkillType_SkillType_MAX = Character_SkillType_ARCHER;
+const int Character_SkillType_SkillType_ARRAYSIZE = Character_SkillType_SkillType_MAX + 1;
+
+const ::google::protobuf::EnumDescriptor* Character_SkillType_descriptor();
+inline const ::std::string& Character_SkillType_Name(Character_SkillType value) {
+  return ::google::protobuf::internal::NameOfEnum(
+    Character_SkillType_descriptor(), value);
+}
+inline bool Character_SkillType_Parse(
+    const ::std::string& name, Character_SkillType* value) {
+  return ::google::protobuf::internal::ParseNamedEnum<Character_SkillType>(
+    Character_SkillType_descriptor(), name, value);
+}
 // ===================================================================
 
 class Character : public ::google::protobuf::Message {
@@ -88,15 +109,85 @@ class Character : public ::google::protobuf::Message {
 
   // nested types ----------------------------------------------------
 
+  typedef Character_SkillType SkillType;
+  static const SkillType DRAGON = Character_SkillType_DRAGON;
+  static const SkillType BABARIAN = Character_SkillType_BABARIAN;
+  static const SkillType ARCHER = Character_SkillType_ARCHER;
+  static inline bool SkillType_IsValid(int value) {
+    return Character_SkillType_IsValid(value);
+  }
+  static const SkillType SkillType_MIN =
+    Character_SkillType_SkillType_MIN;
+  static const SkillType SkillType_MAX =
+    Character_SkillType_SkillType_MAX;
+  static const int SkillType_ARRAYSIZE =
+    Character_SkillType_SkillType_ARRAYSIZE;
+  static inline const ::google::protobuf::EnumDescriptor*
+  SkillType_descriptor() {
+    return Character_SkillType_descriptor();
+  }
+  static inline const ::std::string& SkillType_Name(SkillType value) {
+    return Character_SkillType_Name(value);
+  }
+  static inline bool SkillType_Parse(const ::std::string& name,
+      SkillType* value) {
+    return Character_SkillType_Parse(name, value);
+  }
+
   // accessors -------------------------------------------------------
+
+  // required string name = 1;
+  inline bool has_name() const;
+  inline void clear_name();
+  static const int kNameFieldNumber = 1;
+  inline const ::std::string& name() const;
+  inline void set_name(const ::std::string& value);
+  inline void set_name(const char* value);
+  inline void set_name(const char* value, size_t size);
+  inline ::std::string* mutable_name();
+  inline ::std::string* release_name();
+  inline void set_allocated_name(::std::string* name);
+
+  // required int32 level = 2;
+  inline bool has_level() const;
+  inline void clear_level();
+  static const int kLevelFieldNumber = 2;
+  inline ::google::protobuf::int32 level() const;
+  inline void set_level(::google::protobuf::int32 value);
+
+  // required int32 xp = 3;
+  inline bool has_xp() const;
+  inline void clear_xp();
+  static const int kExperienceFieldNumber = 3;
+  inline ::google::protobuf::int32 xp() const;
+  inline void set_xp(::google::protobuf::int32 value);
+
+  // required .proto.Character.SkillType type = 4;
+  inline bool has_type() const;
+  inline void clear_type();
+  static const int kTypeFieldNumber = 4;
+  inline ::proto::Character_SkillType type() const;
+  inline void set_type(::proto::Character_SkillType value);
 
   // @@protoc_insertion_point(class_scope:proto.Character)
  private:
+  inline void set_has_name();
+  inline void clear_has_name();
+  inline void set_has_level();
+  inline void clear_has_level();
+  inline void set_has_xp();
+  inline void clear_has_xp();
+  inline void set_has_type();
+  inline void clear_has_type();
 
   ::google::protobuf::UnknownFieldSet _unknown_fields_;
 
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
+  ::std::string* name_;
+  ::google::protobuf::int32 level_;
+  ::google::protobuf::int32 xp_;
+  int type_;
   friend void  protobuf_AddDesc_Character_2eproto();
   friend void protobuf_AssignDesc_Character_2eproto();
   friend void protobuf_ShutdownFile_Character_2eproto();
@@ -111,6 +202,155 @@ class Character : public ::google::protobuf::Message {
 
 // Character
 
+// required string name = 1;
+inline bool Character::has_name() const {
+  return (_has_bits_[0] & 0x00000001u) != 0;
+}
+inline void Character::set_has_name() {
+  _has_bits_[0] |= 0x00000001u;
+}
+inline void Character::clear_has_name() {
+  _has_bits_[0] &= ~0x00000001u;
+}
+inline void Character::clear_name() {
+  if (name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    name_->clear();
+  }
+  clear_has_name();
+}
+inline const ::std::string& Character::name() const {
+  // @@protoc_insertion_point(field_get:proto.Character.name)
+  return *name_;
+}
+inline void Character::set_name(const ::std::string& value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+  // @@protoc_insertion_point(field_set:proto.Character.name)
+}
+inline void Character::set_name(const char* value) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    name_ = new ::std::string;
+  }
+  name_->assign(value);
+  // @@protoc_insertion_point(field_set_char:proto.Character.name)
+}
+inline void Character::set_name(const char* value, size_t size) {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    name_ = new ::std::string;
+  }
+  name_->assign(reinterpret_cast<const char*>(value), size);
+  // @@protoc_insertion_point(field_set_pointer:proto.Character.name)
+}
+inline ::std::string* Character::mutable_name() {
+  set_has_name();
+  if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    name_ = new ::std::string;
+  }
+  // @@protoc_insertion_point(field_mutable:proto.Character.name)
+  return name_;
+}
+inline ::std::string* Character::release_name() {
+  clear_has_name();
+  if (name_ == &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    return NULL;
+  } else {
+    ::std::string* temp = name_;
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+    return temp;
+  }
+}
+inline void Character::set_allocated_name(::std::string* name) {
+  if (name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete name_;
+  }
+  if (name) {
+    set_has_name();
+    name_ = name;
+  } else {
+    clear_has_name();
+    name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  }
+  // @@protoc_insertion_point(field_set_allocated:proto.Character.name)
+}
+
+// required int32 level = 2;
+inline bool Character::has_level() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void Character::set_has_level() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void Character::clear_has_level() {
+  _has_bits_[0] &= ~0x00000002u;
+}
+inline void Character::clear_level() {
+  level_ = 0;
+  clear_has_level();
+}
+inline ::google::protobuf::int32 Character::level() const {
+  // @@protoc_insertion_point(field_get:proto.Character.level)
+  return level_;
+}
+inline void Character::set_level(::google::protobuf::int32 value) {
+  set_has_level();
+  level_ = value;
+  // @@protoc_insertion_point(field_set:proto.Character.level)
+}
+
+// required int32 xp = 3;
+inline bool Character::has_xp() const {
+  return (_has_bits_[0] & 0x00000004u) != 0;
+}
+inline void Character::set_has_xp() {
+  _has_bits_[0] |= 0x00000004u;
+}
+inline void Character::clear_has_xp() {
+  _has_bits_[0] &= ~0x00000004u;
+}
+inline void Character::clear_xp() {
+  xp_ = 0;
+  clear_has_xp();
+}
+inline ::google::protobuf::int32 Character::xp() const {
+  // @@protoc_insertion_point(field_get:proto.Character.xp)
+  return xp_;
+}
+inline void Character::set_xp(::google::protobuf::int32 value) {
+  set_has_xp();
+  xp_ = value;
+  // @@protoc_insertion_point(field_set:proto.Character.xp)
+}
+
+// required .proto.Character.SkillType type = 4;
+inline bool Character::has_type() const {
+  return (_has_bits_[0] & 0x00000008u) != 0;
+}
+inline void Character::set_has_type() {
+  _has_bits_[0] |= 0x00000008u;
+}
+inline void Character::clear_has_type() {
+  _has_bits_[0] &= ~0x00000008u;
+}
+inline void Character::clear_type() {
+  type_ = 0;
+  clear_has_type();
+}
+inline ::proto::Character_SkillType Character::type() const {
+  // @@protoc_insertion_point(field_get:proto.Character.type)
+  return static_cast< ::proto::Character_SkillType >(type_);
+}
+inline void Character::set_type(::proto::Character_SkillType value) {
+  assert(::proto::Character_SkillType_IsValid(value));
+  set_has_type();
+  type_ = value;
+  // @@protoc_insertion_point(field_set:proto.Character.type)
+}
+
 
 // @@protoc_insertion_point(namespace_scope)
 
@@ -120,6 +360,11 @@ class Character : public ::google::protobuf::Message {
 namespace google {
 namespace protobuf {
 
+template <> struct is_proto_enum< ::proto::Character_SkillType> : ::google::protobuf::internal::true_type {};
+template <>
+inline const EnumDescriptor* GetEnumDescriptor< ::proto::Character_SkillType>() {
+  return ::proto::Character_SkillType_descriptor();
+}
 
 }  // namespace google
 }  // namespace protobuf
