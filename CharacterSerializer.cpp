@@ -34,7 +34,7 @@ void CharacterSerializer::SaveCharacter(const Character &data){
 	character.set_xp(data.GetXp());
 	switch(data.GetSkill().GetSkillType()){
 		case SkillType::Dragon:
-		avatar.set_type(proto::Character::SkillType::Avatar_SkillType_Dragon);
+		avatar.set_type(proto::Character::SkillType::Avatar_SkillType_DRAGON);
 		break;
 	case SkillType::Babarian:
 		avatar.set_type(proto::Character::SkillType::Avatar_SkillType_BABARIAN);
