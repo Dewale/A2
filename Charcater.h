@@ -4,7 +4,6 @@
 #pragma once
 
 #include "Actor.h"
-#include "CharacterClass.h"
 
 class Character : public Actor 
 {
