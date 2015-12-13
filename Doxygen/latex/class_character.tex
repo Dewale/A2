@@ -1,0 +1,408 @@
+\hypertarget{class_character}{}\section{Character Class Reference}
+\label{class_character}\index{Character@{Character}}
+
+
+{\ttfamily \#include $<$Charcater.\+h$>$}
+
+Inheritance diagram for Character\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_character}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_character_a4c236e411ce0bf61200c4d88e36debc5}{Character} (const \hyperlink{class_character}{Character} \&a)
+\item 
+\hyperlink{class_character_a9e9be564d05ded80962b2045aa70b3fc}{$\sim$\+Character} ()
+\item 
+std\+::string \hyperlink{class_character_a8a39d33ea6e7520b61f3c083785d6035}{Get\+Name} () const 
+\item 
+unsigned \hyperlink{class_character_ad44a3a5644c62a4ae4feec398c77a137}{Get\+Level} () const 
+\item 
+unsigned \hyperlink{class_character_a6453138461bf9f62bdaeb07de9dacf8b}{Get\+Health} () const 
+\item 
+Character\+Class \hyperlink{class_character_abf7b793cda16b5924903d434de9e40a9}{Get\+Class} () const 
+\item 
+unsigned \hyperlink{class_character_a665088d6f0172b71cec106b68360a56a}{Get\+Wins} () const 
+\item 
+unsigned \hyperlink{class_character_a2a2b3a0964d0bffd300d7fcc34965376}{Get\+Losses} () const 
+\item 
+void \hyperlink{class_character_a6b5c00e13c98e143b10e7423fde49384}{Incrementwins} ()
+\item 
+void \hyperlink{class_character_ae810911be58f43ca4189b563383f1a49}{Increment\+Losses} ()
+\item 
+unsigned \hyperlink{class_character_a2bfad59dee714068f3f196fde4f47221}{Get\+Xp} () const 
+\item 
+void \hyperlink{class_character_a34ef80145d40f2d859b98398ec1be189}{Update\+Level} ()
+\item 
+bool \hyperlink{class_character_a73300e57fa813cf193c8f858ca081fd6}{Get\+Level\+Up} () const 
+\item 
+void \hyperlink{class_character_a08899a991714b1b880962064557e34bc}{Take\+Damage} (const unsigned \&damage)
+\item 
+void \hyperlink{class_character_a5816034e10d2ef4610719ad0a68e7314}{Draw} (sf\+::\+Render\+Window \&window) override
+\item 
+void \hyperlink{class_character_a6fd2cc7114d91771abc82f223bde585b}{Set\+Position} (const float \&x\+Position, const float \&y\+Position) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{class_character_aa86be1de1ef615913a552b2134fbb966}{\+\_\+name}
+\item 
+unsigned \hyperlink{class_character_ab76c68c70f6b8a7dd0d70291cfaeacaf}{\+\_\+level}
+\item 
+unsigned \hyperlink{class_character_a143e6724430834bf37d93efe4c8d4f98}{\+\_\+health}
+\item 
+unsigned \hyperlink{class_character_a68d70b5ab4f09cd2a74524fc3d162d3d}{\+\_\+num\+Wins}
+\item 
+unsigned \hyperlink{class_character_a0f2af69ac7a82ebff650b1a430bb4331}{\+\_\+num\+Losses}
+\item 
+unsigned \hyperlink{class_character_a1155ad0a6f019df868ce25fb18767c3d}{\+\_\+xp}
+\item 
+bool \hyperlink{class_character_a7d661e1d0a7631b0c5a2a06ef0165090}{\+\_\+levelup}
+\item 
+sf\+::\+Sprite \hyperlink{class_character_ab3b89d967b817bc3e199ed70f6b6277a}{\+\_\+sprite}
+\item 
+sf\+::\+Image \hyperlink{class_character_a1a8bdd55f5f5ec76eabc83c28f0207e4}{\+\_\+sprite\+\_\+image}
+\item 
+sf\+::\+Texture \hyperlink{class_character_aced7e12300ddeaee16c95850e028b10f}{\+\_\+sprite\+\_\+texture}
+\item 
+const Character\+Class \hyperlink{class_character_a1027f1708720c0f9bbf0da8c4ae10d97}{\+\_\+class}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{class_character}{Character} extends \hyperlink{class_actor}{Actor}. It contains character attributes that are used by human and A\+I players. 
+
+Definition at line 9 of file Charcater.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_character_a4c236e411ce0bf61200c4d88e36debc5}{}\index{Character@{Character}!Character@{Character}}
+\index{Character@{Character}!Character@{Character}}
+\subsubsection[{Character(const Character \&a)}]{\setlength{\rightskip}{0pt plus 5cm}Character\+::\+Character (
+\begin{DoxyParamCaption}
+\item[{const {\bf Character} \&}]{a}
+\end{DoxyParamCaption}
+)}\label{class_character_a4c236e411ce0bf61200c4d88e36debc5}
+Copy constructor for the \hyperlink{class_character}{Character} class 
+
+Definition at line 30 of file Character.\+cpp.
+
+\hypertarget{class_character_a9e9be564d05ded80962b2045aa70b3fc}{}\index{Character@{Character}!````~Character@{$\sim$\+Character}}
+\index{````~Character@{$\sim$\+Character}!Character@{Character}}
+\subsubsection[{$\sim$\+Character()}]{\setlength{\rightskip}{0pt plus 5cm}Character\+::$\sim$\+Character (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_character_a9e9be564d05ded80962b2045aa70b3fc}
+\hyperlink{class_character}{Character} class deconstructor. 
+
+Definition at line 15 of file Charcater.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_character_a5816034e10d2ef4610719ad0a68e7314}{}\index{Character@{Character}!Draw@{Draw}}
+\index{Draw@{Draw}!Character@{Character}}
+\subsubsection[{Draw(sf\+::\+Render\+Window \&window) override}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_character_a5816034e10d2ef4610719ad0a68e7314}
+\hyperlink{class_actor}{Actor} Interface\+: draws the \hyperlink{class_character}{Character}.
+
+The Draw implementation for the \hyperlink{class_character}{Character} class which draws the \hyperlink{class_character}{Character}\textquotesingle{}s sprite. 
+
+Implements \hyperlink{class_actor_ad5c98db519558b3b22c03acec73b8869}{Actor}.
+
+
+
+Definition at line 161 of file Character.\+cpp.
+
+\hypertarget{class_character_abf7b793cda16b5924903d434de9e40a9}{}\index{Character@{Character}!Get\+Class@{Get\+Class}}
+\index{Get\+Class@{Get\+Class}!Character@{Character}}
+\subsubsection[{Get\+Class() const }]{\setlength{\rightskip}{0pt plus 5cm}Character\+Class Character\+::\+Get\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_abf7b793cda16b5924903d434de9e40a9}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s class object.
+
+\begin{DoxyReturn}{Returns}
+the Character\+Class specification of the \hyperlink{class_character}{Character}.
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s class 
+
+Definition at line 68 of file Character.\+cpp.
+
+\hypertarget{class_character_a6453138461bf9f62bdaeb07de9dacf8b}{}\index{Character@{Character}!Get\+Health@{Get\+Health}}
+\index{Get\+Health@{Get\+Health}!Character@{Character}}
+\subsubsection[{Get\+Health() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+Get\+Health (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a6453138461bf9f62bdaeb07de9dacf8b}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s health.
+
+\begin{DoxyReturn}{Returns}
+the health of the \hyperlink{class_character}{Character}, represented as an unsigned number
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s health 
+
+Definition at line 60 of file Character.\+cpp.
+
+\hypertarget{class_character_ad44a3a5644c62a4ae4feec398c77a137}{}\index{Character@{Character}!Get\+Level@{Get\+Level}}
+\index{Get\+Level@{Get\+Level}!Character@{Character}}
+\subsubsection[{Get\+Level() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+Get\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_ad44a3a5644c62a4ae4feec398c77a137}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s level.
+
+\begin{DoxyReturn}{Returns}
+the level of the \hyperlink{class_character}{Character}, represented as an unsigned number
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s level 
+
+Definition at line 52 of file Character.\+cpp.
+
+\hypertarget{class_character_a73300e57fa813cf193c8f858ca081fd6}{}\index{Character@{Character}!Get\+Level\+Up@{Get\+Level\+Up}}
+\index{Get\+Level\+Up@{Get\+Level\+Up}!Character@{Character}}
+\subsubsection[{Get\+Level\+Up() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Character\+::\+Get\+Level\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a73300e57fa813cf193c8f858ca081fd6}
+Determines if the level needs to be updated.
+
+\begin{DoxyReturn}{Returns}
+a boolean value indicating whether the \hyperlink{class_character}{Character} can level up 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file Character.\+cpp.
+
+\hypertarget{class_character_a2a2b3a0964d0bffd300d7fcc34965376}{}\index{Character@{Character}!Get\+Losses@{Get\+Losses}}
+\index{Get\+Losses@{Get\+Losses}!Character@{Character}}
+\subsubsection[{Get\+Losses() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+Get\+Losses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a2a2b3a0964d0bffd300d7fcc34965376}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s number of Losses.
+
+\begin{DoxyReturn}{Returns}
+the number of times the \hyperlink{class_character}{Character} has lost
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s number of losses 
+
+Definition at line 82 of file Character.\+cpp.
+
+\hypertarget{class_character_a8a39d33ea6e7520b61f3c083785d6035}{}\index{Character@{Character}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Character@{Character}}
+\subsubsection[{Get\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Character\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a8a39d33ea6e7520b61f3c083785d6035}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s name.
+
+\begin{DoxyReturn}{Returns}
+the name of the \hyperlink{class_character}{Character}
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s name 
+
+Definition at line 45 of file Character.\+cpp.
+
+\hypertarget{class_character_a665088d6f0172b71cec106b68360a56a}{}\index{Character@{Character}!Get\+Wins@{Get\+Wins}}
+\index{Get\+Wins@{Get\+Wins}!Character@{Character}}
+\subsubsection[{Get\+Wins() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+Get\+Wins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a665088d6f0172b71cec106b68360a56a}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s number of wins.
+
+\begin{DoxyReturn}{Returns}
+the number of times the \hyperlink{class_character}{Character} has won
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s number of wins 
+
+Definition at line 75 of file Character.\+cpp.
+
+\hypertarget{class_character_a2bfad59dee714068f3f196fde4f47221}{}\index{Character@{Character}!Get\+Xp@{Get\+Xp}}
+\index{Get\+Xp@{Get\+Xp}!Character@{Character}}
+\subsubsection[{Get\+Xp() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+Get\+Xp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_character_a2bfad59dee714068f3f196fde4f47221}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s current X\+P.
+
+\begin{DoxyReturn}{Returns}
+the current X\+P (experience) that the \hyperlink{class_character}{Character} has as an unsigned number
+\end{DoxyReturn}
+Returns the \hyperlink{class_character}{Character}\textquotesingle{}s current X\+P. 
+
+Definition at line 113 of file Character.\+cpp.
+
+\hypertarget{class_character_ae810911be58f43ca4189b563383f1a49}{}\index{Character@{Character}!Increment\+Losses@{Increment\+Losses}}
+\index{Increment\+Losses@{Increment\+Losses}!Character@{Character}}
+\subsubsection[{Increment\+Losses()}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Increment\+Losses (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_ae810911be58f43ca4189b563383f1a49}
+Updates the number of losses. This method increments the number of losses for the \hyperlink{class_character}{Character}.
+
+This method also decreases X\+P by 25 or sets it to zero. 
+
+Definition at line 100 of file Character.\+cpp.
+
+\hypertarget{class_character_a6b5c00e13c98e143b10e7423fde49384}{}\index{Character@{Character}!Incrementwins@{Incrementwins}}
+\index{Incrementwins@{Incrementwins}!Character@{Character}}
+\subsubsection[{Incrementwins()}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Incrementwins (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_a6b5c00e13c98e143b10e7423fde49384}
+Updates the number of wins. This method increments the number of wins for the \hyperlink{class_character}{Character}.
+
+This method also increases the X\+P by 50 and updates the \hyperlink{class_character}{Character}\textquotesingle{}s level. 
+
+Definition at line 90 of file Character.\+cpp.
+
+\hypertarget{class_character_a6fd2cc7114d91771abc82f223bde585b}{}\index{Character@{Character}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Character@{Character}}
+\subsubsection[{Set\+Position(const float \&x\+Position, const float \&y\+Position) override}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{x\+Position, }
+\item[{const float \&}]{y\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\label{class_character_a6fd2cc7114d91771abc82f223bde585b}
+\hyperlink{class_actor}{Actor} Interface\+: specifies the position of the \hyperlink{class_character}{Character}.
+
+Position override that also sets the sprite position. 
+
+Reimplemented from \hyperlink{class_actor_a41012afefccde8234e574b03d9fdbc08}{Actor}.
+
+
+
+Definition at line 151 of file Character.\+cpp.
+
+\hypertarget{class_character_a08899a991714b1b880962064557e34bc}{}\index{Character@{Character}!Take\+Damage@{Take\+Damage}}
+\index{Take\+Damage@{Take\+Damage}!Character@{Character}}
+\subsubsection[{Take\+Damage(const unsigned \&damage)}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Take\+Damage (
+\begin{DoxyParamCaption}
+\item[{const unsigned \&}]{damage}
+\end{DoxyParamCaption}
+)}\label{class_character_a08899a991714b1b880962064557e34bc}
+Deals damage taken while playing a round.
+
+Deals damage taken while in match. 
+
+Definition at line 136 of file Character.\+cpp.
+
+\hypertarget{class_character_a34ef80145d40f2d859b98398ec1be189}{}\index{Character@{Character}!Update\+Level@{Update\+Level}}
+\index{Update\+Level@{Update\+Level}!Character@{Character}}
+\subsubsection[{Update\+Level()}]{\setlength{\rightskip}{0pt plus 5cm}void Character\+::\+Update\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_character_a34ef80145d40f2d859b98398ec1be189}
+Updates the level.
+
+Updates the current level of player. 
+
+Definition at line 120 of file Character.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_character_a1027f1708720c0f9bbf0da8c4ae10d97}{}\index{Character@{Character}!\+\_\+class@{\+\_\+class}}
+\index{\+\_\+class@{\+\_\+class}!Character@{Character}}
+\subsubsection[{\+\_\+class}]{\setlength{\rightskip}{0pt plus 5cm}const Character\+Class Character\+::\+\_\+class\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a1027f1708720c0f9bbf0da8c4ae10d97}
+The \hyperlink{class_character}{Character}\textquotesingle{}s class. 
+
+Definition at line 127 of file Charcater.\+h.
+
+\hypertarget{class_character_a143e6724430834bf37d93efe4c8d4f98}{}\index{Character@{Character}!\+\_\+health@{\+\_\+health}}
+\index{\+\_\+health@{\+\_\+health}!Character@{Character}}
+\subsubsection[{\+\_\+health}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+\_\+health\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a143e6724430834bf37d93efe4c8d4f98}
+The amount of health that the \hyperlink{class_character}{Character} has. 
+
+Definition at line 111 of file Charcater.\+h.
+
+\hypertarget{class_character_ab76c68c70f6b8a7dd0d70291cfaeacaf}{}\index{Character@{Character}!\+\_\+level@{\+\_\+level}}
+\index{\+\_\+level@{\+\_\+level}!Character@{Character}}
+\subsubsection[{\+\_\+level}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+\_\+level\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_ab76c68c70f6b8a7dd0d70291cfaeacaf}
+The \hyperlink{class_character}{Character}\textquotesingle{}s current level. 
+
+Definition at line 109 of file Charcater.\+h.
+
+\hypertarget{class_character_a7d661e1d0a7631b0c5a2a06ef0165090}{}\index{Character@{Character}!\+\_\+levelup@{\+\_\+levelup}}
+\index{\+\_\+levelup@{\+\_\+levelup}!Character@{Character}}
+\subsubsection[{\+\_\+levelup}]{\setlength{\rightskip}{0pt plus 5cm}bool Character\+::\+\_\+levelup\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a7d661e1d0a7631b0c5a2a06ef0165090}
+Contains whether the \hyperlink{class_character}{Character} has leveled up. 
+
+Definition at line 119 of file Charcater.\+h.
+
+\hypertarget{class_character_aa86be1de1ef615913a552b2134fbb966}{}\index{Character@{Character}!\+\_\+name@{\+\_\+name}}
+\index{\+\_\+name@{\+\_\+name}!Character@{Character}}
+\subsubsection[{\+\_\+name}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::string Character\+::\+\_\+name\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_aa86be1de1ef615913a552b2134fbb966}
+Name of the \hyperlink{class_character}{Character}. 
+
+Definition at line 107 of file Charcater.\+h.
+
+\hypertarget{class_character_a0f2af69ac7a82ebff650b1a430bb4331}{}\index{Character@{Character}!\+\_\+num\+Losses@{\+\_\+num\+Losses}}
+\index{\+\_\+num\+Losses@{\+\_\+num\+Losses}!Character@{Character}}
+\subsubsection[{\+\_\+num\+Losses}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+\_\+num\+Losses\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a0f2af69ac7a82ebff650b1a430bb4331}
+The number of losses that the \hyperlink{class_character}{Character} has suffered. 
+
+Definition at line 115 of file Charcater.\+h.
+
+\hypertarget{class_character_a68d70b5ab4f09cd2a74524fc3d162d3d}{}\index{Character@{Character}!\+\_\+num\+Wins@{\+\_\+num\+Wins}}
+\index{\+\_\+num\+Wins@{\+\_\+num\+Wins}!Character@{Character}}
+\subsubsection[{\+\_\+num\+Wins}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+\_\+num\+Wins\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a68d70b5ab4f09cd2a74524fc3d162d3d}
+The number of wins that the \hyperlink{class_character}{Character} has achieved. 
+
+Definition at line 113 of file Charcater.\+h.
+
+\hypertarget{class_character_ab3b89d967b817bc3e199ed70f6b6277a}{}\index{Character@{Character}!\+\_\+sprite@{\+\_\+sprite}}
+\index{\+\_\+sprite@{\+\_\+sprite}!Character@{Character}}
+\subsubsection[{\+\_\+sprite}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Sprite Character\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_ab3b89d967b817bc3e199ed70f6b6277a}
+The sprite that represents the \hyperlink{class_character}{Character}. 
+
+Definition at line 121 of file Charcater.\+h.
+
+\hypertarget{class_character_a1a8bdd55f5f5ec76eabc83c28f0207e4}{}\index{Character@{Character}!\+\_\+sprite\+\_\+image@{\+\_\+sprite\+\_\+image}}
+\index{\+\_\+sprite\+\_\+image@{\+\_\+sprite\+\_\+image}!Character@{Character}}
+\subsubsection[{\+\_\+sprite\+\_\+image}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Image Character\+::\+\_\+sprite\+\_\+image\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a1a8bdd55f5f5ec76eabc83c28f0207e4}
+The image used for the \hyperlink{class_character}{Character}\textquotesingle{}s sprite. 
+
+Definition at line 123 of file Charcater.\+h.
+
+\hypertarget{class_character_aced7e12300ddeaee16c95850e028b10f}{}\index{Character@{Character}!\+\_\+sprite\+\_\+texture@{\+\_\+sprite\+\_\+texture}}
+\index{\+\_\+sprite\+\_\+texture@{\+\_\+sprite\+\_\+texture}!Character@{Character}}
+\subsubsection[{\+\_\+sprite\+\_\+texture}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Texture Character\+::\+\_\+sprite\+\_\+texture\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_aced7e12300ddeaee16c95850e028b10f}
+The texture that the \hyperlink{class_character}{Character}\textquotesingle{}s image uses. 
+
+Definition at line 125 of file Charcater.\+h.
+
+\hypertarget{class_character_a1155ad0a6f019df868ce25fb18767c3d}{}\index{Character@{Character}!\+\_\+xp@{\+\_\+xp}}
+\index{\+\_\+xp@{\+\_\+xp}!Character@{Character}}
+\subsubsection[{\+\_\+xp}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Character\+::\+\_\+xp\hspace{0.3cm}{\ttfamily [protected]}}\label{class_character_a1155ad0a6f019df868ce25fb18767c3d}
+The amount X\+P (experience) that the \hyperlink{class_character}{Character} currently has; cannot be less than zero. 
+
+Definition at line 117 of file Charcater.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Adewale Adekoya/\+Documents/\+Git\+Hub/\+A2/Charcater.\+h\item 
+C\+:/\+Users/\+Adewale Adekoya/\+Documents/\+Git\+Hub/\+A2/Character.\+cpp\end{DoxyCompactItemize}

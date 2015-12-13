@@ -1,0 +1,115 @@
+\hypertarget{class_actor}{}\section{Actor Class Reference}
+\label{class_actor}\index{Actor@{Actor}}
+Inheritance diagram for Actor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_actor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{class_actor_ad5c98db519558b3b22c03acec73b8869}{Draw} (sf\+::\+Render\+Window \&window)=0
+\item 
+virtual void \hyperlink{class_actor_a41012afefccde8234e574b03d9fdbc08}{Set\+Position} (const float \&x\+Position, const float \&y\+Position)
+\item 
+sf\+::\+Vector2f \hyperlink{class_actor_a2f63a8afe2d15b4ba695b2d4e4c8597e}{Get\+Dimensions} () const 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f \hyperlink{class_actor_acfabf742ec617868223278c3b8f91336}{\+\_\+dimensions}
+\item 
+sf\+::\+Vector2f \hyperlink{class_actor_ad3760883a99be5b4aaa2635ca761c29b}{\+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Actor.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_actor_ad5c98db519558b3b22c03acec73b8869}{}\index{Actor@{Actor}!Draw@{Draw}}
+\index{Draw@{Draw}!Actor@{Actor}}
+\subsubsection[{Draw(sf\+::\+Render\+Window \&window)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::\+Draw (
+\begin{DoxyParamCaption}
+\item[{sf\+::\+Render\+Window \&}]{window}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_actor_ad5c98db519558b3b22c03acec73b8869}
+Draws a new frame given an sfml window object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ a reference to a window that serves as a target for 2\+D drawing. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_character_a5816034e10d2ef4610719ad0a68e7314}{Character}.
+
+\hypertarget{class_actor_a2f63a8afe2d15b4ba695b2d4e4c8597e}{}\index{Actor@{Actor}!Get\+Dimensions@{Get\+Dimensions}}
+\index{Get\+Dimensions@{Get\+Dimensions}!Actor@{Actor}}
+\subsubsection[{Get\+Dimensions() const }]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Actor\+::\+Get\+Dimensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_actor_a2f63a8afe2d15b4ba695b2d4e4c8597e}
+Returns the actor\textquotesingle{}s dimensions.
+
+\begin{DoxyReturn}{Returns}
+a 2\+D S\+F\+M\+L vector describing the actor\textquotesingle{}s dimensions 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Actor.\+h.
+
+\hypertarget{class_actor_a41012afefccde8234e574b03d9fdbc08}{}\index{Actor@{Actor}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!Actor@{Actor}}
+\subsubsection[{Set\+Position(const float \&x\+Position, const float \&y\+Position)}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actor\+::\+Set\+Position (
+\begin{DoxyParamCaption}
+\item[{const float \&}]{x\+Position, }
+\item[{const float \&}]{y\+Position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_actor_a41012afefccde8234e574b03d9fdbc08}
+Sets the actor\textquotesingle{}s position in the window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Position} & -\/ a constant reference to a floating point value which represents the x axis \\
+\hline
+{\em y\+Position} & -\/ a constant reference to a floating point value which represents the y axis \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{class_character_a6fd2cc7114d91771abc82f223bde585b}{Character}.
+
+
+
+Definition at line 27 of file Actor.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_actor_acfabf742ec617868223278c3b8f91336}{}\index{Actor@{Actor}!\+\_\+dimensions@{\+\_\+dimensions}}
+\index{\+\_\+dimensions@{\+\_\+dimensions}!Actor@{Actor}}
+\subsubsection[{\+\_\+dimensions}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Actor\+::\+\_\+dimensions\hspace{0.3cm}{\ttfamily [protected]}}\label{class_actor_acfabf742ec617868223278c3b8f91336}
+A 2\+D vector containing the dimensions of the actor. 
+
+Definition at line 39 of file Actor.\+h.
+
+\hypertarget{class_actor_ad3760883a99be5b4aaa2635ca761c29b}{}\index{Actor@{Actor}!\+\_\+position@{\+\_\+position}}
+\index{\+\_\+position@{\+\_\+position}!Actor@{Actor}}
+\subsubsection[{\+\_\+position}]{\setlength{\rightskip}{0pt plus 5cm}sf\+::\+Vector2f Actor\+::\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}\label{class_actor_ad3760883a99be5b4aaa2635ca761c29b}
+A 2\+D vector containing the position of the actor. 
+
+Definition at line 41 of file Actor.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Adewale Adekoya/\+Documents/\+Git\+Hub/\+A2/Actor.\+h\end{DoxyCompactItemize}
